@@ -6,4 +6,4 @@ numpy
 requests
 
 # Load images
-cv2
+opencv-python
