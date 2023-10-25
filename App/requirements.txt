@@ -1,0 +1,9 @@
+# Dataframe and Array functions
+pandas# == 1.5.3
+numpy
+
+# Pull company logo from web
+requests
+
+# Load images
+cv2
