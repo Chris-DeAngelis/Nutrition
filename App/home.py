@@ -1,6 +1,6 @@
 import streamlit as st 
 import requests
-import cv2
+#import cv2
 import pandas as pd
 
 # Function to search for nutrition data
@@ -59,13 +59,13 @@ def main():
     # Food object recognition
     st.header("Food Object Recognition from Image")
     uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
-    if uploaded_image is not None:
-        image = cv2.imdecode(np.fromstring(uploaded_image.read(), np.uint8), 1)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
-        # You can use image recognition libraries like OpenCV or deep learning models for food object recognition here.
-        # For brevity, this example doesn't include actual food object recognition code.
-        st.write("Food objects recognized:")
-        st.dataframe(pd.DataFrame(columns=["Food Object"]))
+    # if uploaded_image is not None:
+    #     image = cv2.imdecode(np.fromstring(uploaded_image.read(), np.uint8), 1)
+    #     st.image(image, caption="Uploaded Image", use_column_width=True)
+    #     # You can use image recognition libraries like OpenCV or deep learning models for food object recognition here.
+    #     # For brevity, this example doesn't include actual food object recognition code.
+    #     st.write("Food objects recognized:")
+    #     st.dataframe(pd.DataFrame(columns=["Food Object"]))
 
 if __name__ == "__main__":
     main()
