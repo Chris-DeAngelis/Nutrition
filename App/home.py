@@ -6,7 +6,7 @@ import pandas as pd
 # Function to search for nutrition data
 def search_food_data(search_string):
     # Replace 'YOUR_API_KEY' with your actual API key from FoodData Central.
-    api_key = 'YOUR_API_KEY'
+    api_key = st.secrets["food_api_key"]
     
     # The base URL for the FoodData Central API.
     base_url = 'https://api.nal.usda.gov/fdc/v1/'
