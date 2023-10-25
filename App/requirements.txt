@@ -5,5 +5,5 @@ numpy
 # Pull company logo from web
 requests
 
-# Load images
-opencv-python
+# Segment objects from images
+#opencv-python
